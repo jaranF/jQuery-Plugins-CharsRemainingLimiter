@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost/interview_build_exercises/harrods/index.html?charLimit=20" />
+<title>init_tests</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">init_tests</td></tr>
+</thead><tbody>
+<tr>
+	<td>store</td>
+	<td>Lorem_ipso</td>
+	<td>_msgToType</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>10</td>
+	<td>_charsAllowedLimit</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>0</td>
+	<td>iCounter</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{this.browserbot.getCurrentWindow().document.getElementById(&quot;msgInput&quot;)}</td>
+	<td>elTestTarget</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>javascript{&quot;http://localhost/interview_build_exercises/harrods/index.html?charLimit=&quot; + storedVars[&quot;_charsAllowedLimit&quot;] }</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=label.charsRemaining</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=label.charsRemaining span</td>
+	<td>javascript{ storedVars[&quot;_charsAllowedLimit&quot;] }</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>this.browserbot.getCurrentWindow().document.getElementById(&quot;msgInput&quot;).focus()</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=msgInput</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>######### Begin Sending Keypresses ######### </td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=msgInput</td>
+	<td>javascript{(storedVars[&quot;_msgToType&quot;]).charAt(storedVars[&quot;iCounter&quot;])}</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=label.charsRemaining span</td>
+	<td>javascript{ (storedVars[&quot;_charsAllowedLimit&quot;] - storedVars[&quot;iCounter&quot;]++) - 1}</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=msgInput</td>
+	<td>javascript{(storedVars[&quot;_msgToType&quot;]).charAt(storedVars[&quot;iCounter&quot;])}</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=label.charsRemaining span</td>
+	<td>javascript{ (storedVars[&quot;_charsAllowedLimit&quot;] - storedVars[&quot;iCounter&quot;]++) - 1}</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=msgInput</td>
+	<td>javascript{(storedVars[&quot;_msgToType&quot;]).charAt(storedVars[&quot;iCounter&quot;])}</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=label.charsRemaining span</td>
+	<td>javascript{ (storedVars[&quot;_charsAllowedLimit&quot;] - storedVars[&quot;iCounter&quot;]++) - 1}</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=msgInput</td>
+	<td>javascript{(storedVars[&quot;_msgToType&quot;]).charAt(storedVars[&quot;iCounter&quot;])}</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=label.charsRemaining span</td>
+	<td>javascript{ (storedVars[&quot;_charsAllowedLimit&quot;] - storedVars[&quot;iCounter&quot;]++) - 1}</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=msgInput</td>
+	<td>javascript{(storedVars[&quot;_msgToType&quot;]).charAt(storedVars[&quot;iCounter&quot;])}</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=label.charsRemaining span</td>
+	<td>javascript{ (storedVars[&quot;_charsAllowedLimit&quot;] - storedVars[&quot;iCounter&quot;]++) - 1}</td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>xpath=//label[contains(@class, 'charsRemaining')]@class</td>
+	<td>charsRemaining is-warn-nearLimit</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=msgInput</td>
+	<td>javascript{(storedVars[&quot;_msgToType&quot;]).charAt(storedVars[&quot;iCounter&quot;])}</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=label.charsRemaining span</td>
+	<td>javascript{ (storedVars[&quot;_charsAllowedLimit&quot;] - storedVars[&quot;iCounter&quot;]++) - 1}</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=msgInput</td>
+	<td>javascript{(storedVars[&quot;_msgToType&quot;]).charAt(storedVars[&quot;iCounter&quot;])}</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=label.charsRemaining span</td>
+	<td>javascript{ (storedVars[&quot;_charsAllowedLimit&quot;] - storedVars[&quot;iCounter&quot;]++) - 1}</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=msgInput</td>
+	<td>javascript{(storedVars[&quot;_msgToType&quot;]).charAt(storedVars[&quot;iCounter&quot;])}</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=label.charsRemaining span</td>
+	<td>javascript{ (storedVars[&quot;_charsAllowedLimit&quot;] - storedVars[&quot;iCounter&quot;]++) - 1}</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=msgInput</td>
+	<td>javascript{(storedVars[&quot;_msgToType&quot;]).charAt(storedVars[&quot;iCounter&quot;])}</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=label.charsRemaining span</td>
+	<td>javascript{ (storedVars[&quot;_charsAllowedLimit&quot;] - storedVars[&quot;iCounter&quot;]++) - 1}</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=msgInput</td>
+	<td>javascript{(storedVars[&quot;_msgToType&quot;]).charAt(storedVars[&quot;iCounter&quot;])}</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=label.charsRemaining span</td>
+	<td>0</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>########### Above couple of commands are signify that the charsRemaining limit has been reached ###########</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=msgInput</td>
+	<td>Z</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>id=msgInput</td>
+	<td>javascript{storedVars[&quot;_msgToType&quot;]}</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=msgInput</td>
+	<td>Y</td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>id=msgInput</td>
+	<td>javascript{storedVars[&quot;_msgToType&quot;]}</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>javascript{(storedVars[&quot;elTestTarget&quot;]) }</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>javascript{storedVars[&quot;_charsAllowedLimit&quot;]}</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

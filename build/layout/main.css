@@ -1,0 +1,33 @@
+@import url('../../layout/reset.css');
+body {
+  margin-top: 8em;
+  font-size: 0.75em; /* 12px basefont size*/
+}
+.charsRemaining {
+  display: block;
+  margin: 0.5em 0 0.666em 0;
+  font-size: 0.917em; /* 11px actual off of 12px basesize */
+  font-style: italic;
+}
+.is-warn-nearLimit {
+  color: #f00;
+}
+textarea {
+  width: 100%;
+  overflow: auto; /* reqd for IE when dir="rtl" */
+}
+form {
+  width: 30em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*
+  Used a CSS descendent selector instead of the nice CSS attribute selector (see below) but the descendent selector does have better cross-browser compatibility
+  input[type="radio"] {
+    display: none;
+  } */
+#msgAlignment input {
+  margin-left: 1.167em;
+}
+
+
